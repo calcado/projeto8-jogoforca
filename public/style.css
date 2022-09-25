@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+.corpo{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.escolherPalavra{
+    background-color: #27ae60;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    font-weight: 700px;
+    font-size: 18px;
+}
+
+.palavraAleatoria{
+    margin-left: 0px;
+    font-size: 40px;
+}
+.direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.baixo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.teclado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+.letras{
+    width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.letrinha {
+   width: 50px;
+   height: 50px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+      
+}
+.Chute {
+  font-size: 15px;
+  color: #286897;
+  background-color: #e1ecf4;
+  border-radius: 5px;
+
+}
+.palavraErrada{
+    color:red
+}
+.palavraCerta{
+    color: green;
+}
