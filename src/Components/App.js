@@ -32,11 +32,13 @@ function Letra(props){
             console.log(props.palavraSorteada)
             if(input === props.palavraSorteada){
                 props.setUnderline(input)
-                props.setCor("palavraEstilo verde")  
+                props.setCor("palavraEstilo verde")
+                props.setJogo(false)  
                 
             }else{
                 props.setUnderline(props.palavraSorteada)
                 props.setCor("palavraEstilo vermelho")
+                props.setJogo(false)  
             }
         }
 
@@ -123,11 +125,13 @@ export default function App(){
         if(acertos === palavraSorteada.length){
             setUnderline(palavraSorteada)
             setCor("palavraEstilo verde") 
+            setJogo(false)
         }
         if(erro>= 6){
             alert()
             setCor("palavraEstilo vermelho")
             setUnderline(palavraSorteada)
+            setJogo(false)
         } 
          
     }
@@ -150,34 +154,12 @@ export default function App(){
         setUnderline([...arrUnderline])
         console.log(palavra)
     }
-    // function Letra(props){
-    //     const [habilitado, setDesabilitar] = useState('habilitado')
-    //     console.log(habilitado)
-    //     return(
-    //         <li>
-    //                 <button className={`cor letrinha ${habilitado}`}
-    //                   disabled={habilitado != "habilitado" ? true : false }  onClick={()=>SelecionarLetra(props.letra,setDesabilitar)}>{props.letra.toUpperCase()}
-    //                 </button>
-    //         </li>)
     
-    //     }
    function handleChange(evento){
     setInput(evento.target.value)
 
    }
-    // function Teclado(props){
-        
-    //     return(
-
-    //         <div className='teclado'>
-    //             <p>Ja sei a palavra</p>
-    //             <input className="input" type="text" name="description" onChange={handleForm} value={form.description}/>
-    //             {/* <input className="input"  type ='text' value={input} placeholder='' onChange={handleChange}/> */}
-    //             <button className='tentativa' onClick={()=> Chute()}> Chutar </button>
-    //         </div>
-
-    //     )
-    // }
+    
       
     return (
         <>
@@ -199,7 +181,7 @@ export default function App(){
             setCor={setCor} 
             setpalavraAleatoria={setpalavraAleatoria} 
             palavraSorteada = {palavraSorteada} 
-            
+            setJogo = {setJogo}
             />
           
             
