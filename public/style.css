@@ -58,7 +58,11 @@
    height: 50px;
    margin-bottom: 20px;
    margin-left: 20px;
+
       
+}
+.letrinha:disabled{
+    background-color: grey;
 }
 .Chute {
   font-size: 15px;
@@ -73,3 +77,9 @@
 .palavraCerta{
     color: green;
 }
+/* .habilitado{
+
+}
+.desabilitado{
+
+} */
