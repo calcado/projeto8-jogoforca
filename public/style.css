@@ -20,7 +20,7 @@
     font-size: 18px;
 }
 
-.palavraAleatoria{
+.palavraEstilo{
     margin-left: 0px;
     font-size: 40px;
 }
@@ -64,17 +64,21 @@
 .letrinha:disabled{
     background-color: grey;
 }
-.Chute {
+.input{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.tentativa {
   font-size: 15px;
   color: #286897;
   background-color: #e1ecf4;
   border-radius: 5px;
 
 }
-.palavraErrada{
+.vermelho{
     color:red
 }
-.palavraCerta{
+.verde{
     color: green;
 }
 /* .habilitado{
